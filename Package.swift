@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "RingierAdSDK",
             targets: [
-                "RingierAdSDK"
+                "sdk"
             ]
         )
     ],
@@ -21,7 +21,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "RingierAdSDK",
+            name: "sdk",
             dependencies: [
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
                 .product(name: "AppNexusSDK", package: "mobile-sdk-ios-spm"),
@@ -32,13 +32,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PrebidXCFramework",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.1/PrebidMobile.xcframework.zip",
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.2/PrebidMobile.xcframework.zip",
             checksum: "a168cc1fec46cafa454ba8f09b5b6459f0b4efc09cfaf9d4dad87ce5fc109e6a"
         ),
         .binaryTarget(
             name: "RingierAdXCFramework",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.1/RingierAdSDK.xcframework.zip",
-            checksum: "c380a99492bc4a6fe4c53bbbd11977f4d0aa90ccc80efcca421e6654df56bf6b"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.2/RingierAdSDK.xcframework.zip",
+            checksum: "2c7111e4e7bbd99e9c87b6b2c186a49f3197e82f2c7dd4e1e97ca42b2e8050b3"
         )
     ],
     swiftLanguageVersions: [.v5]
