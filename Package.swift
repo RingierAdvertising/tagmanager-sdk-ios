@@ -31,13 +31,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PrebidMobile",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.4/PrebidMobile.xcframework.zip",
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.5/PrebidMobile.xcframework.zip",
             checksum: "a168cc1fec46cafa454ba8f09b5b6459f0b4efc09cfaf9d4dad87ce5fc109e6a"
         ),
         .binaryTarget(
             name: "RingierAdSDK",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.4/RingierAdSDK.xcframework.zip",
-            checksum: "74ab0a253c336761ea8fbe18d847fe12ae026de3589c2da4e4c95c93f7f3c73c"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.5/RingierAdSDK.xcframework.zip",
+            checksum: "d82703b0475f16c377de01e0d00546da614cdb682659ab49ef8566ad84405332"
         ),
     ],
     swiftLanguageVersions: [.v5]
