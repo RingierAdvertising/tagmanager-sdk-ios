@@ -1,6 +1,6 @@
 ## Documentation
 
-Full documentation is available at: [https://cdn.ringier-advertising.ch/doc/developer/ios/](https://cdn.ringier-advertising.ch/doc/developer/ios/)
+Full documentation is available at: [https://cdn.ringier-advertising.ch/doc/developer/ios/index.html](https://cdn.ringier-advertising.ch/doc/developer/ios/index.html)
 
 ## Installation
 
