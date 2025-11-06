@@ -1,3 +1,7 @@
+## Documentation
+
+Full documentation is available at: [https://cdn.ringier-advertising.ch/doc/developer/ios/](https://cdn.ringier-advertising.ch/doc/developer/ios/)
+
 ## Installation
 
 ### Swift Package Manager

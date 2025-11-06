@@ -37,7 +37,7 @@ let package = Package(
         .binaryTarget(
             name: "RingierAdSDK",
             url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.0/RingierAdSDK.xcframework.zip",
-            checksum: "1038f1fb8aa0c328e05d3ddd744feee4c04158583a4e3e7342f3e0ca8a8a5287"
+            checksum: "7cd0cc8f0999d00a5181cb6d07c32aa8f1703cba0f3ba9f0315cf5dcb80515ff"
         ),
         .binaryTarget(
             name: "AppNexusSDKDynamic",
