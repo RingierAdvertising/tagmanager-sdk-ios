@@ -6,9 +6,9 @@ Pod::Spec.new do |spec|
     Ringier Advertising SDK for iOS - Tag Manager SDK for managing ad integrations
   DESC
   
-  spec.homepage     = "https://github.com/RingierAdvertising/tagmanager-sdk-ios"
-  spec.license      = { :type => "Apache-2.0", :file => "LICENSE" }
-  spec.author       = { "Ringier Advertising" => "support@ringier-advertising.ch" }
+  spec.homepage     = "https://cdn.ringier-advertising.ch/doc/developer/ios/index.html"
+  spec.license      = { :type => "Proprietary", :text => "Copyright (c) Ringier Advertising. All rights reserved." }
+  spec.author       = { "Ringier Advertising" => "ppm@ringier.ch" }
   
   spec.platform     = :ios, "13.0"
   spec.ios.deployment_target = "13.0"
