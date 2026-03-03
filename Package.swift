@@ -32,28 +32,28 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PrebidMobile",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.7/PrebidMobile.xcframework.zip",
-            checksum: "255d43383ac049ec5c7c5f2fc6c2e918e78f5a8f0295fbb6776e3c345f1de0df"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/PrebidMobile.xcframework.zip",
+            checksum: "6872a9c73898643553f84e2ea65cf489227afe83ccbd9f7961dd9c87ddfb53c8"
         ),
         .binaryTarget(
             name: "RingierAdSDK",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.7/RingierAdSDK.xcframework.zip",
-            checksum: "8f61d51e58cb7e8b51ee784b71370934f4b4ae7f5e9f4fcbb4bb21a1d0d01bca"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/RingierAdSDK.xcframework.zip",
+            checksum: "c6a00e644403836b3ce80a1282de20ee5f52b9741ea2a11aac94ff066bf74eee"
         ),
         .binaryTarget(
             name: "AppNexusSDKDynamic",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.7/AppNexusSDKDynamic.xcframework.zip",
-            checksum: "f98c5e09ca7e174afd71881a8558457f6e6701304cd4db61f3497f3cc7dec19b"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/AppNexusSDKDynamic.xcframework.zip",
+            checksum: "26a199f169e85d202325e6877626fa43f0ad8cfc6dab97b7a55b1d4fb5d7d6a2"
         ),
         .binaryTarget(
             name: "OMSDK_Microsoft",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.7/OMSDK_Microsoft.xcframework.zip",
-            checksum: "8b7a7cd9e336b0aa9c2ba6fee466000f7fe1b1e3b425e42aca20468fc147c256"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/OMSDK_Microsoft.xcframework.zip",
+            checksum: "1b77b6853f921052648c53a55a1ba2631a5f67b9cf2a00051db9249621eb5e2a"
         ),
         .binaryTarget(
             name: "OMSDK_Prebidorg",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.7/OMSDK_Prebidorg.xcframework.zip",
-            checksum: "ede0cc84fa441ef17319ed8a5f2145a6a93da614f137b7492248f3bddaeac9b2"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/OMSDK_Prebidorg.xcframework.zip",
+            checksum: "e7788ced4853003755e2b4675fa7e7c6d6d7be195a0c0dd635c012e6e6d3c3d0"
         )
     ],
     swiftLanguageVersions: [.v5]
