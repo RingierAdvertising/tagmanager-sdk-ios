@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "RingierAdSDK"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "Ringier Advertising SDK for iOS"
   spec.description  = <<-DESC
     Ringier Advertising SDK for iOS - Tag Manager SDK for managing ad integrations
@@ -15,12 +15,12 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   
   spec.source       = {
-    :http => "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/RingierAdSDK.xcframework.zip"
+    :http => "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.9/RingierAdSDK.xcframework.zip"
   }
 
   spec.prepare_command = <<-CMD
     if [ ! -d "RingierAdSDK.xcframework" ]; then
-      curl -LO https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.8/RingierAdSDK.xcframework.zip
+      curl -LO https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.0.9/RingierAdSDK.xcframework.zip
       unzip -o RingierAdSDK.xcframework.zip
       rm RingierAdSDK.xcframework.zip
     fi
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   
   spec.vendored_frameworks = "RingierAdSDK.xcframework"
   
-  spec.dependency "Google-Mobile-Ads-SDK", "13.1.0"
+  spec.dependency "Google-Mobile-Ads-SDK", "13.0.0"
   spec.dependency "AppNexusSDK", "9.1.1"
   spec.dependency "PrebidMobile", "3.3.0"
   
