@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "RingierAdSDK"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "Ringier Advertising SDK for iOS"
   spec.description  = <<-DESC
     Ringier Advertising SDK for iOS - Tag Manager SDK for managing ad integrations
@@ -15,18 +15,18 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
   
   spec.source       = {
-    :http => "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.1.0/RingierAdSDK.xcframework.zip"
+    :http => "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.1.1/RingierAdSDK.xcframework.zip"
   }
 
   spec.prepare_command = <<-CMD
     if [ ! -d "RingierAdSDK.xcframework" ]; then
-      curl -LO https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.1.0/RingierAdSDK.xcframework.zip
+      curl -LO https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.1.1/RingierAdSDK.xcframework.zip
       unzip -o RingierAdSDK.xcframework.zip
       rm RingierAdSDK.xcframework.zip
     fi
 
     if [ ! -d "Alloy.xcframework" ]; then
-      curl -LO https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.1.0/Alloy.xcframework.zip
+      curl -LO https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.1.1/Alloy.xcframework.zip
       unzip -o Alloy.xcframework.zip
       rm Alloy.xcframework.zip
     fi
