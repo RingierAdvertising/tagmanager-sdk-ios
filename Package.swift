@@ -15,13 +15,18 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.3.0")
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.3.0"),
+        // Pulls FBAudienceNetwork 6.21.1 and the Meta mediation
+        // adapter 6.21.1.1. Meta's binaries are consumed from
+        // Google's and Meta's own distributions rather than re-hosted here.
+        .package(url: "https://github.com/googleads/googleads-mobile-ios-mediation-meta", exact: "6.21.101")
     ],
     targets: [
         .target(
             name: "RingierAdSDKWrapper",
             dependencies: [
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+                .product(name: "MetaAdapterTarget", package: "googleads-mobile-ios-mediation-meta"),
                 .target(name: "PrebidMobile"),
                 .target(name: "RingierAdSDK"),
                 .target(name: "Alloy"),
@@ -33,33 +38,33 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PrebidMobile",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.4/PrebidMobile.xcframework.zip",
-            checksum: "8554c6dc6357651acae3b09c6af1818b9cf8280b3f4f0df565afcf6c5ab58ed5"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.5/PrebidMobile.xcframework.zip",
+            checksum: "715026ffc2bba1dd5dc0601b89ce58ef1268b9905fb406683b171bf0d65a7697"
         ),
         .binaryTarget(
             name: "RingierAdSDK",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.4/RingierAdSDK.xcframework.zip",
-            checksum: "c3adf014bbc424e321c621088b6a8f7a195b21d22bc9967ac95e21c652a0006f"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.5/RingierAdSDK.xcframework.zip",
+            checksum: "50e59578e40518414dd61feca86445c9be75d14ca0044bb26b33c1589d057e38"
         ),
         .binaryTarget(
             name: "Alloy",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.4/Alloy.xcframework.zip",
-            checksum: "1e2d974389980e1f83bd6bb111060f15cdbd61fcb7e5dc619fb0055a0a5b5ee6"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.5/Alloy.xcframework.zip",
+            checksum: "b8ffb5c5f0c44cdec5d9b9c5c48689479ec0d68e6612cdcd3f7f174368214ae7"
         ),
         .binaryTarget(
             name: "AppNexusSDKDynamic",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.4/AppNexusSDKDynamic.xcframework.zip",
-            checksum: "2b73d71ce59d3b225dc657ccdb1a91e4b58efd8462cbaf3d0bb715de43936ffa"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.5/AppNexusSDKDynamic.xcframework.zip",
+            checksum: "dc4964957d25dbee87ab6b5d61d070a8ed609ee19b48a81a87e891b6ab46ba92"
         ),
         .binaryTarget(
             name: "OMSDK_Microsoft",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.4/OMSDK_Microsoft.xcframework.zip",
-            checksum: "c0438909f89a24c18c48d2a60b7b337a266cec4b8cfa8327e4578d014b384b57"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.5/OMSDK_Microsoft.xcframework.zip",
+            checksum: "9f13d917b6e82194cb2827c13c6d06b581b7c3433b83ce5682c9413f0f7bddce"
         ),
         .binaryTarget(
             name: "OMSDK_Prebidorg",
-            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.4/OMSDK_Prebidorg.xcframework.zip",
-            checksum: "eaad43ce9584ce4df7cbc0084532318603c6aaae0ef26e9d4741a99fba02c494"
+            url: "https://github.com/RingierAdvertising/tagmanager-sdk-ios/releases/download/1.2.5/OMSDK_Prebidorg.xcframework.zip",
+            checksum: "b2f135b86e26b1c56020cbd3e9f293d62f987d32a9d284bb7ff5507f3a1d1cd1"
         )
     ],
     swiftLanguageVersions: [.v5]
